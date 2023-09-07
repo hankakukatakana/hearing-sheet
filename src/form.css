@@ -1,0 +1,34 @@
+.input-wrapper {
+    position: relative;
+  }
+  .input-wrapper input {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .input-wrapper input::-moz-placeholder {
+    color: #999;
+  }
+  .input-wrapper input::placeholder {
+    color: #999;
+  }
+  .input-wrapper input:not(:-moz-placeholder-shown) + span {
+    inset: -0.4rem auto auto 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    background-color: #fff;
+  }
+  .input-wrapper input:not(:placeholder-shown) + span, .input-wrapper input:focus + span {
+    inset: -0.4rem auto auto 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    background-color: #fff;
+  }
+  .input-wrapper span {
+    position: absolute;
+    inset: 1rem auto auto 1rem;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }/*# sourceMappingURL=form.css.map */

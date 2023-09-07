@@ -1,0 +1,29 @@
+.input-wrapper {
+    position: relative;
+
+    input {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    &::placeholder {
+        color: #999;
+    }
+
+    &:not(:placeholder-shown) + span,
+    &:focus + span {
+        inset: -0.4rem auto auto 1rem ;
+        font-size: 0.8rem;
+        color: #666;
+        background-color: #fff;
+    }
+    }
+
+    span {
+        position: absolute;
+        inset: 1rem auto auto 1rem;
+        color: #999;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+}
