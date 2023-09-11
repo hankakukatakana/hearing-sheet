@@ -58,21 +58,21 @@
             <span>担当営業</span>
         </div>
         <script>
-            document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
+            document.querySelector('input[name="CoName"]').addEventListener('change', function(){
                 var value1 = this.value
-                var input1 = document.getElementById('phoneNo')
+                var input1 = document.getElementById('company')
 
-                if (value === 'on') {
+                if (value1 === 'on') {
                     input1.style.display = 'block';                                      
                 } else if(value === 'off'){
                     input1.style.display = 'none';                   
                 }
             })
-            document.querySelector('input[name="CoName"]').addEventListener('change', function(){
+            document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
                 var value2 = this.value
-                var input2 = document.getElementById('company')
+                var input2 = document.getElementById('phoneNo')
 
-                if (value === 'on') {
+                if (value2 === 'on') {
                     input2.style.display = 'block';                                      
                 } else if(value === 'off'){
                     input2.style.display = 'none';                   
@@ -82,7 +82,7 @@
                 var value3 = this.value
                 var input3 = document.getElementById('toritugi')
 
-                if (value === 'on') {
+                if (value3 === 'on') {
                     input3.style.display = 'block';                                      
                 } else if(value === 'off'){
                     input3.style.display = 'none';                   
