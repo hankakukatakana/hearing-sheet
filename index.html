@@ -51,9 +51,9 @@
         </div>
         <h2>取り次</h2>
         <form action="">
-            <input type="radio" name="phoneOnOff" id="toritugiOn" value="off">
+            <input type="radio" name="toritugiOnOff" id="toritugiOn" value="off">
             <label for="toritugiOff">営業取り次ナシ</label><br>
-            <input type="radio" name="phoneOnOn" id="toritugiOff" value="on">
+            <input type="radio" name="toritugiOnOff" id="toritugiOff" value="on">
             <label for="toritugiOn">営業取り次アリ</label>
         </form>
         <div class="input-wrapper" value=" ">
@@ -69,6 +69,16 @@
                     input1.style.display = 'block';                                      
                 } else if(value === 'off'){
                     input1.style.display = 'none';                   
+                }
+            })
+            document.querySelector('input[name="CoName"]').addEventListener('change', function(){
+                var value = this.value
+                var input2 = document.getElementById('company')
+
+                if (value === 'on') {
+                    input2.style.display = 'block';                                      
+                } else if(value === 'off'){
+                    input2.style.display = 'none';                   
                 }
             })
             document.querySelector('input[name="CoName"]').addEventListener('change', function(){
