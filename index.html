@@ -30,6 +30,7 @@
         <h2>折り返し連絡先</h2>
         <form action="">
             <input type="radio" name="phoneOnOff" id="daiban" value="off">代表者番号<br>
+            
             <input type="radio" name="phoneOnOff" id="mobile" value="on">個別番号・携帯電話
         </form>
         <div class="input-wrapper" value=" ">
@@ -43,6 +44,17 @@
         <h2>概要</h2>
         <div class="input-wrapper">
             <textarea id="" name="" rows="8" cols="100"></textarea>
+        </div>
+        <h2>取り次</h2>
+        <form action="">
+            <input type="radio" name="phoneOnOff" id="toritugiOn" value="off">
+            <label for="toritugiOff">営業取り次ナシ</label>
+            <input type="radio" name="phoneOnOff" id="toritugiOff" value="on">
+            <label for="toritugiOn">営業取り次アリ</label>
+        </form>
+        <div class="input-wrapper" value=" ">
+            <input type="text" placeholder=" ">
+            <span>担当営業</span>
         </div>
         <script>
             document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
