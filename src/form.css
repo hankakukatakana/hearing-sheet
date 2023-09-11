@@ -36,3 +36,18 @@
   .checkbox label{
         padding: 10px;
   }/*# sourceMappingURL=form.css.map */
+  .button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: aqua;
+    z-index: -1;
+    transition: scale .4s ease;
+    scale: 0 1;
+    transform-origin: right;
+}
+.button:hover::before {
+    scale: 1;
+    transform-origin: left;
+}
