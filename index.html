@@ -23,20 +23,20 @@
         <script>
 
         </script>
-        <div class="input-wrapper" id="company">
+        <div class="input-wrapper" id="company" value="onoffinput2">
             <input type="text" placeholder=" " >
             <span>会社名</span>
         </div>
         <h2>折り返し連絡先</h2>
         <form action="">
-            <input type="radio" name="phone" id="daiban" value="">代表者番号<br>
-            <input type="radio" name="phone" id="mobile" value="">携帯電話
+            <input type="radio" name="phoneOnOff" id="daiban" value="phoneOff">代表者番号<br>
+            <input type="radio" name="phoneOnOff" id="mobile" value="phoneOn">携帯電話
         </form>
-        <div class="input-wrapper">
+        <div class="input-wrapper" value=" ">
             <input type="text" placeholder=" ">
             <span>名前</span>
         </div>
-        <div class="input-wrapper">
+        <div class="input-wrapper" value="onoffinput2" id="phoneNo" style="display: block;">
             <input type="text" placeholder=" ">
             <span>電話番号</span>
         </div>
@@ -44,6 +44,18 @@
         <div class="input-wrapper">
             <textarea id="" name="" rows="8" cols="100"></textarea>
         </div>
+        <script>
+            document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
+                var value = this.value
+                var input1 = document.getElementById('phoneNo')
+                var input2 = document.getElementById('input2')
+                if (value === 'phoneOff') {
+                    input1.style.display = 'block'                                        
+                } else if(value === 'phoneOff'){
+                    input1.style.display = 'none'                   
+                }
+            })
+        </script>
         <button>
             <a href="https://hankakukatakana.github.io/hearing-sheet/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
