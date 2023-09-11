@@ -62,7 +62,7 @@
         </div>
         <script>
             document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
-                var value = this.value
+                var value1 = this.value
                 var input1 = document.getElementById('phoneNo')
 
                 if (value === 'on') {
@@ -72,7 +72,7 @@
                 }
             })
             document.querySelector('input[name="CoName"]').addEventListener('change', function(){
-                var value = this.value
+                var value2 = this.value
                 var input2 = document.getElementById('company')
 
                 if (value === 'on') {
@@ -82,13 +82,13 @@
                 }
             })
             document.querySelector('input[name="toritugiOnOff"]').addEventListener('change', function(){
-                var value = this.value
-                var input2 = document.getElementById('toritugi')
+                var value3 = this.value
+                var input3 = document.getElementById('toritugi')
 
                 if (value === 'on') {
-                    input2.style.display = 'block';                                      
+                    input3.style.display = 'block';                                      
                 } else if(value === 'off'){
-                    input2.style.display = 'none';                   
+                    input3.style.display = 'none';                   
                 }
             })
             
