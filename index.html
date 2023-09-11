@@ -17,8 +17,8 @@
     <div class="container">
         <h2>電話先</h2>
         <form action="">
-            <input type="radio" name="phone" id="daiban" value="daiban">確認済<br>
-            <input type="radio" name="phone" id="daiban" value="daiban">未確認
+            <input type="radio" name="CoName" id="daiban" value="off">確認済<br>
+            <input type="radio" name="CoName" id="daiban" value="on">未確認
         </form>
         <script>
 
@@ -29,8 +29,8 @@
         </div>
         <h2>折り返し連絡先</h2>
         <form action="">
-            <input type="radio" name="phoneOnOff" id="daiban" value="phoneOff">代表者番号<br>
-            <input type="radio" name="phoneOnOff" id="mobile" value="phoneOn">個別番号・携帯電話
+            <input type="radio" name="phoneOnOff" id="daiban" value="off">代表者番号<br>
+            <input type="radio" name="phoneOnOff" id="mobile" value="on">個別番号・携帯電話
         </form>
         <div class="input-wrapper" value=" ">
             <input type="text" placeholder=" ">
@@ -48,13 +48,24 @@
             document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
                 var value = this.value
                 var input1 = document.getElementById('phoneNo')
-                var input2 = document.getElementById('company')
-                if (value === 'phoneOn') {
+
+                if (value === 'on') {
                     input1.style.display = 'block';                                      
-                } else if(value === 'phoneOff'){
+                } else if(value === 'off'){
                     input1.style.display = 'none';                   
                 }
             })
+            document.querySelector('input[name="CoName"]').addEventListener('change', function(){
+                var value = this.value
+                var input2 = document.getElementById('company')
+
+                if (value === 'on') {
+                    input2.style.display = 'block';                                      
+                } else if(value === 'off'){
+                    input2.style.display = 'none';                   
+                }
+            })
+            
         </script>
         <button>
             <a href="https://hankakukatakana.github.io/hearing-sheet/">
