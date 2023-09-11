@@ -56,7 +56,7 @@
             <input type="radio" name="toritugiOnOff" id="toritugiOn" value="on">
             <label for="toritugiOn">営業取り次アリ</label>
         </form>
-        <div class="input-wrapper" value=" ">
+        <div class="input-wrapper" value=" " id="toritugi">
             <input type="text" placeholder=" ">
             <span>担当営業</span>
         </div>
@@ -81,9 +81,9 @@
                     input2.style.display = 'none';                   
                 }
             })
-            document.querySelector('input[name="CoName"]').addEventListener('change', function(){
+            document.querySelector('input[name="toritugiOnOff"]').addEventListener('change', function(){
                 var value = this.value
-                var input2 = document.getElementById('company')
+                var input2 = document.getElementById('toritugi')
 
                 if (value === 'on') {
                     input2.style.display = 'block';                                      
