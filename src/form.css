@@ -35,7 +35,7 @@
   }
   .checkbox label{
         padding: 10px;
-  }/*# sourceMappingURL=form.css.map */
+  }
   .button::before {
     content: "";
     display: block;
@@ -50,4 +50,4 @@
 .button:hover::before {
     scale: 1;
     transform-origin: left;
-}
+}/*# sourceMappingURL=form.css.map */
