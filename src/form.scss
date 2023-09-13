@@ -37,13 +37,14 @@
     align-items: center;
     width: 200px;
     border: solid 1px #666;
+    background-color: #5865f286;
 }
 .button::before {
     content: "";
     display: block;
     position: absolute;
     inset: 0;
-    background-color: aqua;
+    background-color: #5865F2;;
     z-index: -1;
     transition: scale .4s ease;
     scale: 0 1;
