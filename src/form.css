@@ -38,7 +38,7 @@
   }
   .button {
     position: relative;
-    align-items: center;
+    text-align: center;
     width: 100px;
   }
   .button::before {
