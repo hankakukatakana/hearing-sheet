@@ -38,6 +38,8 @@
   }
   .button {
     position: relative;
+    align-items: center;
+    width: 100px;
   }
   .button::before {
     content: "";
