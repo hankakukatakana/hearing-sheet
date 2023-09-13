@@ -40,6 +40,8 @@
     position: relative;
     text-align: center;
     width: 100px;
+
+    border: 1px #666;
   }
   .button::before {
     content: "";
