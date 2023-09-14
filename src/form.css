@@ -42,12 +42,12 @@
     width: 200px;
     border: solid 1px #666;
     background-color: #5865F252;
-    transform: skewX(25deg);
   }
   .button::before {
     content: "";
     display: block;
     position: absolute;
+    transform: skewX(25deg);
     inset: 0;
     background-color: #5865F2;
     z-index: -1;
