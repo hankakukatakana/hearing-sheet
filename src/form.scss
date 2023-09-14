@@ -38,6 +38,7 @@
     width: 200px;
     border: solid 1px #666;
     background-color: #5865f286;
+    transform: skewX(25deg);
 }
 .button::before {
     content: "";
