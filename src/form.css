@@ -43,6 +43,7 @@
     border: solid 1px #666;
     background-color: #5865F252;
     transform: skewX(25deg);
+    margin: auto;
   }
   .button::before {
     content: "";
