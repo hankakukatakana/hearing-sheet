@@ -58,4 +58,8 @@
   .button:hover::before {
     scale: 1;
     transform-origin: left;
-  }/*# sourceMappingURL=form.css.map */
+  }
+  .button-text{
+    transform: skewX(-25deg);
+  }
+  /*# sourceMappingURL=form.css.map */
