@@ -23,7 +23,7 @@
             <label for="Nameoff">未確認</label>
         </form>
         <div class="input-wrapper" id="company" value="onoffinput2" style="display: block;">
-            <input type="text" placeholder=" " >
+            <input type="text" placeholder=" " maxlength="20">
             <span>会社名</span>
         </div>
         <h2>折り返し連絡先</h2>
@@ -35,11 +35,11 @@
             <label for="mobile">個別番号・携帯電話</label>
         </form>
         <div class="input-wrapper" value=" ">
-            <input type="text" placeholder=" ">
+            <input type="text" placeholder=" " maxlength="20">
             <span>名前</span>
         </div>
         <div class="input-wrapper" id="phoneNo" value=" " style="display: block;">
-            <input type="text" placeholder=" ">
+            <input type="text" placeholder=" " maxlength="20">
             <span>電話番号</span>
         </div>
         <h2>概要</h2>
@@ -57,40 +57,6 @@
             <input type="text" placeholder=" ">
             <span>担当者</span>
         </div>
-        <script>
-            document.querySelector('input[name="CoName"]').addEventListener('change', function(){
-                var value1 = this.value
-                var input1 = document.getElementById('company')
-
-                if (value1 === 'on') {
-                    input1.style.display = 'block';                                      
-                } else if(value === 'off'){
-                    input1.style.display = 'none';                   
-                }
-            })
-            document.querySelector('input[name="phoneOnOff"]').addEventListener('change', function(){
-                var value2 = this.value
-                var input2 = document.getElementById('phoneNo')
-
-                if (value2 === 'on') {
-                    input2.style.display = 'block';                                      
-                } else if(value === 'off'){
-                    input2.style.display = 'none';                   
-                }
-            })
-            document.querySelector('input[name="toritugiOnOff"]').addEventListener('change', function(){
-                var value3 = this.value
-                var input3 = document.getElementById('toritugi')
-
-                if (value3 === 'on') {
-                    input3.style.display = 'block';                                      
-                } else if(value === 'off'){
-                    input3.style.display = 'none';                   
-                }
-            })
-            
-        </script>
-
         <button>
             <a href="https://hankakukatakana.github.io/hearing-sheet/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
